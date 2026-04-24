@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+    <!--card de pokemon para la lista -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <!-- Imagen del pokemon -->
+        <ImageView
+            android:id="@+id/ivPokemon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Imagen del pokemon" />
+
+        <!-- ID del pokemon -->
+        <TextView
+            android:id="@+id/tvPokemonId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="#001"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+
+
+        <!--nombre del pokemon -->
+        <TextView
+            android:id="@+id/tvPokemonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
